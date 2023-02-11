@@ -1,19 +1,25 @@
 import React from "react";
+import About from "./About"
+import { Jumbotron, Container, Button } from 'react-bootstrap'
 
 function Home() {
   return (
     <div>
-      <h1>Home Page</h1>
+      <h1>Welcome to my coding journey</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
-        varius, blandit rhoncus sem. Morbi lacinia nisi ac dui fermentum, sed luctus urna tincidunt.
-        Etiam ut feugiat ex. Cras non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna
-        imperdiet ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras rutrum
-        ligula in tincidunt commodo. Morbi sit amet mollis orci, in tristique ex. Donec nec ornare
-        elit. Donec blandit est sed risus feugiat porttitor. Vestibulum molestie hendrerit massa non
-        consequat. Vestibulum vitae lorem tortor. In elementum ultricies tempus. Interdum et
-        malesuada fames ac ante ipsum primis in faucibus.
+        Hello, welcome! You have successfully loaded my website.
+        (Pats myself on the back).
       </p>
+ 
+     <Jumbotron fluid>
+  <Container>
+    <h1>Fluid jumbotron</h1>
+    <p>
+      This is a modified jumbotron that occupies the entire horizontal space of
+      its parent.
+    </p>
+  </Container>
+</Jumbotron>
     </div>
   );
 }

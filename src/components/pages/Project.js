@@ -7,6 +7,7 @@ import password from '../../assets/projects/password-generator.jpg';
 import readME from '../../assets/projects/read-me-generator.png';
 import weather from '../../assets/projects/weather-dashboard.png';
 import workday from '../../assets/projects/workday-scheduler.png';
+import weatherpick from '../../assets/projects/weather-pickmeup.png';
 
 const projects = [  
   {
@@ -50,6 +51,12 @@ const projects = [
     description: "Day-Scheduler made with HTML, CSS, JavaScript and Third-Party API - jQuery",
     image: workday,
     deployed: "https://damnsemicolon.github.io/work-day-scheduler-shannon"
+  },
+  {
+    name: "Weather Pick-Me-Up",
+    description: "Application using OpenMeteo and GIPHI API, developed in group effort",
+    image: weatherpick,
+    deployed: "https://stevelab1.github.io/weather-pickmeup/"
   }
   ];
 
@@ -61,18 +68,10 @@ function Project() {
         Here on this page, you will find a showcase of some of my recent projects that demonstrate my skills and experience in various programming languages and technologies.
       </p>
 
-      <p>
-        Each project has been carefully selected to highlight my expertise and demonstrate my ability to deliver innovative solutions. My portfolio includes a range of projects, from simple websites to complex web applications, and everything in between.
-      </p>
-
-      <p>
-        Whether you're a potential client or just browsing, I invite you to explore my portfolio and see what I can do. If you have any questions or would like to discuss a new project, please feel free to reach out to me. I would love to hear from you!
-      </p>
-
-      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>
+      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-evenly", alignItems: "center", height: "100vh" }}>
       {projects.map(project => (
         <div key={project.name}>
-          <div className="card" style={{ width: "18rem" }}>
+          <div className="card" style={{ width: "18rem", marginTop: "15px"}}>
             <img
               className="card-img-top"
               src={project.image}
@@ -80,22 +79,21 @@ function Project() {
               style={{ height: "18rem", objectFit: "cover", border: "1px solid gray" }}
             />
             <div className="card-body">
-              <ul>
-                <li>
-                  <strong>Name:</strong> {project.name}
-                </li>
-                <li>
-                  <strong>Description:</strong> {project.description}
-                </li>
+
+                  <strong>{project.name}</strong><br/>
+              
+                  {project.description}<br/>
+                
                 <a
                   href={project.deployed}
-                  className="btn btn-primary"
+                  className="btn btn-secondary"
                   target="_blank"
+                  rel="noreferrer noopener"
                   style={{ marginTop: "10px" }}
                 >
                   Check it out
                 </a>
-              </ul>
+
             </div>
           </div>
         </div>
