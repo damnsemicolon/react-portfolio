@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import ContactButton from './ContactButton';
+
 
 function NavTabs() {
   return (
@@ -14,17 +16,6 @@ function NavTabs() {
           }
         >
           home
-        </NavLink>
-      </li>
-        {/* ===== ABOUT TAB ===== */}
-      <li className="nav-item">
-        <NavLink
-          to="about"
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
-          about me
         </NavLink>
       </li>
         {/* ===== PROJECT TAB ===== */}
@@ -50,17 +41,9 @@ function NavTabs() {
           contact
         </NavLink>
       </li>
-        {/* ===== RESUME TAB ===== */}
-        <li className="nav-item">
-        <NavLink
-          to="resume"
-          end
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
-          resume
-        </NavLink>
+        {/* ===== CONTACT BUTTON ===== */}
+            <li className="nav-item ml-auto">
+        <ContactButton />
       </li>
     </ul>
   );

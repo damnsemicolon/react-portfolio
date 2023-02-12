@@ -79,11 +79,8 @@ function Project() {
               style={{ height: "18rem", objectFit: "cover", border: "1px solid gray" }}
             />
             <div className="card-body">
-
                   <strong>{project.name}</strong><br/>
-              
                   {project.description}<br/>
-                
                 <a
                   href={project.deployed}
                   className="btn btn-secondary"

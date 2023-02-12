@@ -1,25 +1,30 @@
 import React from "react";
-import About from "./About"
 import { Jumbotron, Container, Button } from 'react-bootstrap'
+import avatar from '../../assets/projects/avatar.jpg';
+import ContactModal from '../ContactButton'
 
 function Home() {
   return (
     <div>
-      <h1>Welcome to my coding journey</h1>
-      <p>
-        Hello, welcome! You have successfully loaded my website.
-        (Pats myself on the back).
-      </p>
- 
-     <Jumbotron fluid>
-  <Container>
-    <h1>Fluid jumbotron</h1>
-    <p>
-      This is a modified jumbotron that occupies the entire horizontal space of
-      its parent.
-    </p>
-  </Container>
-</Jumbotron>
+      <Jumbotron>
+
+        <div class="jumbo">
+          <img
+            className="avatar"
+            src={avatar}
+          />
+        </div>
+        <h1>Shannon's Portfolio</h1>
+        <p>
+          This is my test portfolio utilizing React.<br />
+          Hopefully everything will look right. 🤞
+        </p>
+
+        <p>If you would like to share an idea, mentor me, sponsor me, <br />or simply connect with me, please contact me below:
+        </p>
+      <ContactModal />
+
+      </Jumbotron>
     </div>
   );
 }
