@@ -8,7 +8,7 @@ function Home() {
     <div>
       <Jumbotron>
 
-        <div class="jumbo">
+        <div>
           <img
             className="avatar"
             src={avatar}
