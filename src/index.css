@@ -59,7 +59,9 @@ ul {
 .list-group {
  color: black;
 }
-
+.btn {
+    margin-right: 10px;
+}
 .list-left {
     padding:100px 0 100px 0;
 }
