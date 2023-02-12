@@ -5,8 +5,9 @@ import ContactButton from './ContactButton';
 
 function NavTabs() {
   return (
+    
     <ul className="nav nav-tabs">
-        {/* ===== HOME TAB ===== */}
+      {/* ===== HOME TAB ===== */}
       <li className="nav-item">
         <NavLink
           to="/"
@@ -18,7 +19,7 @@ function NavTabs() {
           home
         </NavLink>
       </li>
-        {/* ===== PROJECT TAB ===== */}
+      {/* ===== PROJECT TAB ===== */}
       <li className="nav-item">
         <NavLink
           to="project"
@@ -29,7 +30,19 @@ function NavTabs() {
           project
         </NavLink>
       </li>
-        {/* ===== CONTACT TAB ===== */}
+      {/* ===== SkillsList TAB ===== */}
+      <li className="nav-item">
+        <NavLink
+          to="skillslist"
+          end
+          className={({ isActive }) =>
+            isActive ? 'nav-link active' : 'nav-link'
+          }
+        >
+          skills
+        </NavLink>
+      </li>
+      {/* ===== CONTACT TAB ===== */}
       <li className="nav-item">
         <NavLink
           to="contact"
@@ -41,8 +54,8 @@ function NavTabs() {
           contact
         </NavLink>
       </li>
-        {/* ===== CONTACT BUTTON ===== */}
-            <li className="nav-item ml-auto">
+      {/* ===== CONTACT BUTTON ===== */}
+      <li className="nav-item ml-auto">
         <ContactButton />
       </li>
     </ul>

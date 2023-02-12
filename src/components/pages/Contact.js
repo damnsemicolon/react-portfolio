@@ -8,6 +8,8 @@ function Contact(props) {
     <div>
       <h1>Seek, and you will find:</h1>
       <p>
+      Hello there. My name is Shannon Yap. I'm from Hong Kong. I'm from a sales background with experiences in finance, compliances, marketing, and at one point even vineyard management. </p>
+      <p>
         I would love to hear from you! Whether you have a question, suggestion, or just want to say hello, please don't hesitate to reach out to me. You can contact me through the following methods:
       </p>
       <div className="contact-grid">
