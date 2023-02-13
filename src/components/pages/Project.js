@@ -8,6 +8,7 @@ import readME from '../../assets/projects/read-me-generator.png';
 import weather from '../../assets/projects/weather-dashboard.png';
 import workday from '../../assets/projects/workday-scheduler.png';
 import weatherpick from '../../assets/projects/weather-pickmeup.png';
+import reactportfolio from '../../assets/projects/screenshot.png';
 
 const projects = [  
   {
@@ -65,6 +66,13 @@ const projects = [
     image: weatherpick,
     github: "https://github.com/stevelab1/weather-pickmeup/",
     deployed: "https://stevelab1.github.io/weather-pickmeup/"
+  },
+  {
+    name: "React Portfolio",
+    description: "Portfolio created with focus on using React",
+    image: reactportfolio,
+    github: "https://github.com/damnsemicolon/react-portfolio-shannon",
+    deployed: "https://fascinating-hummingbird-41286a.netlify.app/"
   }
   ];
 

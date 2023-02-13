@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import ContactButton from '../ContactButton';
+import Resume from '../Resume';
+
 function Contact(props) {
   return (
     <div>
@@ -11,6 +13,7 @@ function Contact(props) {
       Hello there. My name is Shannon Yap. I'm from Hong Kong. I'm from a sales background with experiences in finance, compliances, marketing, and at one point even vineyard management. </p>
       <div className="text-center">
     <ContactButton />
+    <Resume />
     </div> 
     <br/>
       <p>

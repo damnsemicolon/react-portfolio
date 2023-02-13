@@ -16,16 +16,16 @@ body {
 .jumbotron {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://picsum.photos/id/56/600/300) no-repeat;
     background-size: cover;
-    display:grid;
-    color:white;
+    display: grid;
+    color: grey;
     place-items: center;
-  }
+    height: calc(100vh - 75px);
+}
 
 .avatar {
     width: 15em;
     border-radius: 50%;
     border:3px solid white;
-    
 }
 
 .avatar:hover {
@@ -59,9 +59,11 @@ ul {
 .list-group {
  color: black;
 }
+
 .btn {
     margin-right: 10px;
 }
+
 .list-left {
     padding:100px 0 100px 0;
 }
