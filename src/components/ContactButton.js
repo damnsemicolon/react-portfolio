@@ -15,7 +15,7 @@ function ContactButton() {
 
       <Modal show={showModal} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Contact Me</Modal.Title>
+          <h2>Contact Me</h2>
         </Modal.Header>
         <Modal.Body>
           <Form>
