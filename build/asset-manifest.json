@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.97652af1.css",
-    "main.js": "/static/js/main.9c1f258f.js",
+    "main.css": "/static/css/main.7a40ea5b.css",
+    "main.js": "/static/js/main.b26ef4a3.js",
     "static/media/bootstrap-portfolio.png": "/static/media/bootstrap-portfolio.f4c61cc08d1da202a483.png",
     "static/media/html-css-portfolio.png": "/static/media/html-css-portfolio.1b8ee2899db232050ca7.png",
     "static/media/weather-pickmeup.png": "/static/media/weather-pickmeup.48549eccf9a3bc9f44fb.png",
@@ -14,11 +14,11 @@
     "static/media/workday-scheduler.png": "/static/media/workday-scheduler.cd3dee5ca398e216c717.png",
     "static/media/polite-cat.jpg": "/static/media/polite-cat.73c79dd640b705e127a1.jpg",
     "index.html": "/index.html",
-    "main.97652af1.css.map": "/static/css/main.97652af1.css.map",
-    "main.9c1f258f.js.map": "/static/js/main.9c1f258f.js.map"
+    "main.7a40ea5b.css.map": "/static/css/main.7a40ea5b.css.map",
+    "main.b26ef4a3.js.map": "/static/js/main.b26ef4a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.97652af1.css",
-    "static/js/main.9c1f258f.js"
+    "static/css/main.7a40ea5b.css",
+    "static/js/main.b26ef4a3.js"
   ]
 }
