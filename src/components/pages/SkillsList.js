@@ -10,6 +10,9 @@ function SkillsList() {
   return (
     <div>
     <h1>Front-end Development Skills</h1>
+    <p>
+    I have experience and proficiency in HTML, CSS, and JavaScript, as well as UX/UI design, third-party APIs such as jQuery and Bootstrap, and version control with Git and GitHub. I am also skilled in server-side APIs, AJAX, and JSON, as well as the Agile software development methodology.
+    </p>
 
     <section className="row mx-auto" style={{ width: '93%' }}>
       <div className="col-4">
@@ -25,7 +28,7 @@ function SkillsList() {
             aria-controls="foundations"
             onClick={() => handleTabClick('foundations')}
           >
-            Front-End Foundations
+            Front-end Development Skills
           </a>
           <a
             className={`list-group-item list-group-item-action list-left text-center ${

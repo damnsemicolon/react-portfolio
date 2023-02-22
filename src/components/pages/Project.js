@@ -10,7 +10,7 @@ import workday from '../../assets/projects/workday-scheduler.png';
 import weatherpick from '../../assets/projects/weather-pickmeup.png';
 import reactportfolio from '../../assets/projects/screenshot.png';
 
-const projects = [  
+const projects = [
   {
     name: "Bootstrap Portfolio",
     description: "A Bootstrap-powered portfolio page created by using bootstrap and custom CSS",
@@ -74,7 +74,7 @@ const projects = [
     github: "https://github.com/damnsemicolon/react-portfolio-shannon",
     deployed: "https://fascinating-hummingbird-41286a.netlify.app/"
   }
-  ];
+];
 
 function Project() {
   return (
@@ -85,19 +85,19 @@ function Project() {
       </p>
 
       <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-evenly", alignItems: "center", height: "100vh" }}>
-      {projects.map(project => (
-        <div key={project.name}>
-          <div className="card" style={{ width: "18rem", marginTop: "15px"}}>
-            <img
-              className="card-img-top"
-              src={project.image}
-              alt={project.name}
-              style={{ height: "18rem", objectFit: "cover", border: "1px solid gray" }}
-            />
-            <div className="card-body">
-                  <strong>{project.name}</strong><br/>
-                  {project.description}<br/>
-                  <a
+        {projects.map(project => (
+          <div key={project.name}>
+            <div className="card" style={{ width: "18rem", marginTop: "15px" }}>
+              <img
+                className="card-img-top"
+                src={project.image}
+                alt={project.name}
+                style={{ height: "18rem", objectFit: "cover", border: "1px solid gray" }}
+              />
+              <div className="card-body">
+                <strong>{project.name}</strong><br />
+                {project.description}<br />
+                <a
                   href={project.github}
                   className="btn btn-secondary"
                   target="_blank"
@@ -115,15 +115,13 @@ function Project() {
                 >
                   deployed
                 </a>
-
+              </div>
             </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
     </div>
   );
 }
-
 
 export default Project;

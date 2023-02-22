@@ -5,7 +5,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import ContactButton from '../ContactButton';
 import Resume from '../Resume';
 
-function Contact(props) {
+function Contact() {
   return (
     <div>
       <h1>Seek, and you will find:</h1>
